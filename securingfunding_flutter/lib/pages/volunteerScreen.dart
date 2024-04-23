@@ -12,7 +12,7 @@ class VolunteerScreen extends StatelessWidget {
         title: const Text('Volunteers'),
       ),
       body: Center(
-        child: SF_Volunteer()
+        child: SFVolunteer()
         ),
       );
   }

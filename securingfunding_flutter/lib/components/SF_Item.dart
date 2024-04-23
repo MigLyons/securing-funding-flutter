@@ -1,10 +1,5 @@
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:securingfunding_flutter/pages/home.dart';
-
-
-//dummy data, implement query firestore later
 
 
 class SFItem extends StatefulWidget {
@@ -22,14 +17,12 @@ class SFItemState extends State<SFItem>{
 
   void reload(){
     setState(() {
-        print(stuff.items.length);
     });
   }
   @override
   Widget build(BuildContext context) {
     stuff.retrieveItems();
     return SingleChildScrollView(
-      
       child: GestureDetector(
         onTap: reload,
         child: DataTable(
@@ -125,28 +118,10 @@ class ItemRetrieval{
 
    void retrieveItems() async {
     var grabbyHands = await itemsRef.get().then((value) => value.docs);
-      //This should go into the callback above
     for (var thing in grabbyHands) {
-      print(thing.data());
       { 
         items.add(thing.data()); 
-        };
+        }
     }
-
-    print(items.length);
-    print("Items updated");
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

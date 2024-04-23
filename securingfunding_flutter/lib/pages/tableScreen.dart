@@ -12,7 +12,7 @@ class TableScreen extends StatelessWidget {
         title: const Text('Tables'),
       ),
       body: Center(
-        child: SF_Table()
+        child: SFTable()
         ),
       );
   }

@@ -15,7 +15,7 @@ class AttendeeScreen extends StatelessWidget {
         title: const Text('Attendees'),
       ),
       body: Center(
-        child: SF_Attendee(),
+        child: SFAttendee(),
         ),
       );
   }
