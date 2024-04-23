@@ -1,13 +1,1 @@
-{
-  "hosting": {
-    "source": ".",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "frameworksBackend": {
-      "region": "us-west1"
-    }
-  }
-}
+{"hosting":{"source":".","ignore":["firebase.json","**/.*","**/node_modules/**"],"frameworksBackend":{"region":"us-west1"}},"flutter":{"platforms":{"dart":{"lib/firebase_options.dart":{"projectId":"awad-003","configurations":{"web":"1:879211946497:web:8cc206921be0c21dce1600","windows":"1:879211946497:web:16518bafba603d0cce1600"}}}}}}
